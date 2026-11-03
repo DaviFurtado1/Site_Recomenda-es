@@ -1,0 +1,133 @@
+body{
+    background-image: url(../_img/thumb-1920-879106.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.div{
+    background: rgba(3, 157, 252, 0.10);
+    border: 1px solid rgba(0, 149, 255, 0.5);
+    text-align: center;
+    backdrop-filter: blur(16px);
+    margin: 200px;
+    margin-top: -10px;
+    font-family: Playfair Display;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(1, 251, 255, 0.37);
+    font-weight: bold;
+    color: #ffffff;
+    font-size: larger;
+    animation: mudarCorBorda 8s ease infinite;
+    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.25), 0 0 20px rgba(18, 207, 220, 0.15);
+}
+.div h1{
+    font-family: 'Times New Roman', Times, serif;
+    size: 70px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(18, 207, 220, 0.7),
+                 0 0 20px rgba(18, 207, 220, 0.4),
+                 0 0 30px rgba(18, 207, 220, 0.2);
+    font-weight: bold;
+    font-style: italic;
+}
+.div img{
+    width: 20%;
+    height: 20%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+.div img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 240, 255, 0.4);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+    size: 70px;
+    text-align: center;
+    border: solid 2px;
+    border: 2px solid #00f0ff;
+    background-image: linear-gradient(rgba(18, 207, 220, 0.2), rgba(18, 207, 220, 0.05)), linear-gradient(135deg, rgba(0, 149, 255, 0.6), rgba(255, 255, 255, 0.05));
+    color: #ffffff;
+    font-weight: bold;
+    backdrop-filter: blur(12px);
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 12px;
+    padding: 15px 20px;
+    animation: mudarCorBorda 8s ease infinite;
+}
+.div strong {
+    color: #12cfdc; 
+    font-weight: bold;
+}
+.hr{
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(18, 207, 220, 0.8), transparent);
+    margin: 40px 0;
+
+}
+@keyframes mudarCorBorda {
+    0% {
+        border-color: #12cfdc;
+        box-shadow: 0 0 10px rgba(18, 207, 220, 0.3);
+    }
+    33% {
+        border-color: #1bb5a8;
+        box-shadow: 0 0 10px rgba(44, 117, 191, 0.3);
+    }
+    66% {
+        border-color: #051eff;
+        box-shadow: 0 0 10px rgba(9, 0, 129, 0.3);
+    }
+    100% {
+        border-color: #12cfdc;
+        box-shadow: 0 0 10px rgba(18, 207, 220, 0.3);
+    }
+}
+.eu{
+    width: 60px;             
+    height: 60px;
+    object-fit: cover;   
+    border-radius: 50%;
+    border: 2px solid rgba(0, 240, 255, 0.6); 
+    background: rgba(10, 15, 30, 0.4);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.eu:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+    cursor: pointer;
+}
+.botao{
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    background: rgba(18, 207, 220, 0.2);
+    border: 2px solid #12cfdc;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(18, 207, 220, 0.3);
+    animation: mudarCorBorda 8s ease infinite;
+}
+.botao:hover{
+    background: #12cfdc;
+    color: #000000;
+    box-shadow: 0 0 25px rgba(18, 207, 220, 0.7);
+    transform: translateY(-2px);
+}
