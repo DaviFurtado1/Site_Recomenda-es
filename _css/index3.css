@@ -153,3 +153,7 @@ body{
 html {
     scroll-behavior: smooth;
 }
+::selection {
+    background: rgba(0, 17, 255, 0.5);
+    color: #00ffe1;
+}

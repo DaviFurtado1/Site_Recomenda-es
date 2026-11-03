@@ -152,3 +152,7 @@ html {
         transform: translateY(0);
     }
 }
+::selection {
+    background: #12cfdc;
+    color: #000000;
+}
