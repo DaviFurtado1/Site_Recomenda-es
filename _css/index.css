@@ -4,6 +4,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    cursor: default;
+}
+.div p{
+    cursor: text;
 }
 .div{
     background: rgba(3, 157, 252, 0.10);
@@ -11,18 +15,19 @@ body{
     text-align: center;
     backdrop-filter: blur(16px);
     margin: 200px;
-    margin-top: -10px;
+    margin-top: -80px;
     font-family: Playfair Display;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(1, 251, 255, 0.37);
     font-weight: bold;
     color: #ffffff;
     font-size: larger;
     animation: mudarCorBorda 8s ease infinite;
     box-shadow: 0 10px 30px rgba(0, 240, 255, 0.25), 0 0 20px rgba(18, 207, 220, 0.15);
+    animation: fadeIn 1s ease-out forwards, mudarCorBorda 8s ease infinite;
 }
 .div h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Playfair Display;
     size: 70px;
     text-align: center;
     color: #ffffff;
@@ -31,6 +36,7 @@ body{
                  0 0 30px rgba(18, 207, 220, 0.2);
     font-weight: bold;
     font-style: italic;
+    cursor: text;
 }
 .div img{
     width: 20%;
@@ -48,7 +54,7 @@ body{
 }
 
 .h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Playfair Display;
     size: 70px;
     text-align: center;
     border: solid 2px;
@@ -63,6 +69,7 @@ body{
     border-radius: 12px;
     padding: 15px 20px;
     animation: mudarCorBorda 8s ease infinite;
+    cursor: text;
 }
 .div strong {
     color: #12cfdc; 
@@ -130,4 +137,18 @@ body{
     color: #000000;
     box-shadow: 0 0 25px rgba(18, 207, 220, 0.7);
     transform: translateY(-2px);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
