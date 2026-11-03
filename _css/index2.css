@@ -51,8 +51,8 @@ body{
 }
 .div img:hover{
     transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
-    box-shadow: 0 15px 30px rgba(0, 240, 255, 0.25), 0 0 15px rgba(255, 0, 127, 0.2);
-    border-color: rgba(0, 240, 255, 0.8);
+    box-shadow: 0 15px 30px rgba(85, 0, 255, 0.25), 0 0 15px rgba(255, 0, 127, 0.2);
+    border-color: rgba(153, 0, 255, 0.8);
 }
 
 .h1{
